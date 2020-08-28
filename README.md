@@ -15,3 +15,19 @@ to update:
 ```
 git submodule update --recursive --remote
 ```
+
+## to run without notebook
+
+(for instance on the NVIDIA)
+
+```
+python3 experiment_basic.py
+python3 experiment_downsample.py
+python3 experiment_grayscale.py
+```
+In case you get `OMP: Error #15: Initializing libiomp5.dylib, but found libiomp5.dylib already initialized.`, run :
+```
+KMP_DUPLICATE_LIB_OK=TRUE python3 experiment_basic.py
+KMP_DUPLICATE_LIB_OK=TRUE python3 experiment_downsample.py
+KMP_DUPLICATE_LIB_OK=TRUE python3 experiment_grayscale.py
+```
