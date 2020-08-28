@@ -2,6 +2,10 @@
 Projet de stage master 1 : modélisation du traitement visuel d'une image fovéale
 
 
+## getting the submodule to download images
+
+See [doc](https://github.blog/2016-02-01-working-with-submodules/) :
+
 ```
 git submodule update --init --recursive
 ```
