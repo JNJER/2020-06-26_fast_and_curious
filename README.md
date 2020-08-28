@@ -6,6 +6,12 @@ Projet de stage master 1 : modélisation du traitement visuel d'une image fovéa
 
 See [doc](https://github.blog/2016-02-01-working-with-submodules/) :
 
+to init:
 ```
 git submodule update --init --recursive
+```
+
+to update:
+```
+git submodule update --recursive --remote
 ```
