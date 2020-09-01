@@ -1,7 +1,7 @@
 
 #import model's script and set the output file
 from DCNN_benchmark.models import *
-filename = f'results/{datetag}_results_2 _{HOST}.json'
+filename = f'results/{datetag}_results_2_{HOST}.json'
 
 # Output's set up
 try:
