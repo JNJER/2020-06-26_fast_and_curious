@@ -5,4 +5,5 @@ matplotlib
 numpy
 imageio
 torch
+torchvision
 pandas
