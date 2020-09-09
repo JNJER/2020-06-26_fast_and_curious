@@ -1,5 +1,5 @@
 
-# import libs
+# Importing libraries
 import os
 import time 
 from time import strftime,gmtime
@@ -9,14 +9,14 @@ import numpy as np
 import imageio
 from numpy import random
 from torchvision.datasets import ImageFolder
+# to plot
 import matplotlib.pyplot as plt
-
 # to store results
 import pandas as pd
 
 # figure's variables
 fig_width = 20
-phi = (np.sqrt(5)+1)/2
+phi = (np.sqrt(5)+1)/2 # golden ratio
 phi = phi**2
 colors = ['b', 'r', 'k','g']
 
@@ -28,7 +28,7 @@ datetag = '2020-08-27'
 #dataset configuration
 
 image_size = 256 # default image resolution
-image_sizes = 2**np.arange(6, 10) # resolutions explored
+image_sizes = 2**np.arange(6, 10) # resolutions explored in experiment 2
 
 N_images_per_class = 10
 #i_labels = random.randint(1000, size=(N_labels)) # Random choice
@@ -58,11 +58,17 @@ reverse_i_labels = {}
 for i_label, label in enumerate(i_labels):
     reverse_i_labels[label] = i_label
 
-print('-'*24)
+
+def pprint(message):
+    print('-'*len(message))
+    print(message)
+    print('-'*len(message))
+
+pprint('List of Pre-selected classes')
 # choosing the selected classes for recognition
 for i_label in i_labels: 
     print('label', i_label, '=', labels[i_label])
     for key in name:
         if name[key]['class_name'] == labels[i_label]:
             id_dl += key + ' '
-print('label IDs = ', id_dl)
+pprint('label IDs = ' + str(id_dl) )
