@@ -21,7 +21,9 @@ phi = phi**2
 colors = ['b', 'r', 'k','g']
 
 # host & date's variables 
-HOST = os.uname()[1]
+# HOST = os.uname()[1]
+HOST = 'jnjer-HP-Pavilion-Notebook'
+HOST = 'fortytwo'
 #datetag = strftime("%Y-%m-%d", gmtime()) 
 datetag = '2020-08-27'
 

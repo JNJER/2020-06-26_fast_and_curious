@@ -10,10 +10,9 @@ transform = transforms.Compose([
     transforms.Resize(int(image_size)),      # Resize the image to image_size x image_size pixels size.
     transforms.CenterCrop(int(image_size-20)),  # Crop the image to (image_size-20) x (image_size-20) pixels around the center.
     transforms.ToTensor(),       # Convert the image to PyTorch Tensor data type.
-    transforms.Normalize(        # Normalize the image by adjusting its average and
-                                 #     its standard deviation at the specified values.
-    mean=[0.485, 0.456, 0.406],                
-    std=[0.229, 0.224, 0.225]                  
+    transforms.Normalize(        # Normalize the image by adjusting
+    mean=[0.485, 0.456, 0.406],  #  its average and
+    std=[0.229, 0.224, 0.225]    #  its standard deviation at the specified values.              
     )])
 
 
