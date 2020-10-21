@@ -2,7 +2,6 @@
 # Importing libraries
 import os
 import time 
-from time import strftime,gmtime
 import json
 import time 
 import numpy as np
@@ -21,9 +20,11 @@ phi = phi**2
 colors = ['b', 'r', 'k','g']
 
 # host & date's variables 
-# HOST = os.uname()[1]
-HOST = 'jnjer-HP-Pavilion-Notebook'
-HOST = 'fortytwo'
+HOST = os.uname()[1]
+# HOST = 'jnjer-HP-Pavilion-Notebook'
+# HOST = 'fortytwo'
+print('Running benchmark on host', HOST)
+from time import strftime, gmtime
 #datetag = strftime("%Y-%m-%d", gmtime()) 
 datetag = '2020-08-27'
 

@@ -11,6 +11,8 @@ else :
     print(f"No existing path match for this folder, creating a folder at {path}")
     os.makedirs(path)
 
+list_dir = os.listdir(path)
+    
 # if the folder is empty, download the images using the ImageNet-Datasets-Downloader
 if len(list_dir) < N_labels : 
     print('This folder do not have anough classes, downloading some more') 
