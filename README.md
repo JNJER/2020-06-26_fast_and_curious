@@ -1,4 +1,4 @@
-# Fast and curious* : Projet de stage master 1 : modélisation du traitement visuel d'une image fovéale
+# *Fast and curious* : Projet de stage master 1 : modélisation du traitement visuel d'une image fovéale
 
 See a follow-up in https://github.com/JNJER/2021-04-28_transfer_learning
 
