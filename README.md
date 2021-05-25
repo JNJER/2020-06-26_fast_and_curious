@@ -1,6 +1,7 @@
 # *Fast and curious* : Projet de stage master 1 : modélisation du traitement visuel d'une image fovéale
 
-See a follow-up in https://github.com/JNJER/2021-04-28_transfer_learning
+* This is rendered in https://laurentperrinet.github.io/sciblog/posts/2020-09-28-benchmarking-cnns.html
+* See a follow-up in https://github.com/JNJER/2021-04-28_transfer_learning
 
 ## getting the submodule to download images
 
